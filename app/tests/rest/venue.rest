@@ -1,0 +1,17 @@
+GET http://127.0.0.1:8000/api/booking/venues?filter=%&page=1
+Content-Type: application/json
+
+###
+GET http://127.0.0.1:8000/api/booking/venues/V001
+Content-Type: application/json
+
+###
+POST http://127.0.0.1:8000/api/booking/venues
+Content-Type: application/json
+
+{
+  "code": "V001",
+  "name": "Dewan Masyarakat",
+  "description": "Dewan Masyarakat",
+  "venue_type": 1
+}

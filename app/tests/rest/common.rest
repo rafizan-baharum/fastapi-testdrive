@@ -1,0 +1,17 @@
+GET http://127.0.0.1:8000/api/common/state-codes?page=1&filter=%
+Content-Type: application/json
+
+###
+GET http://127.0.0.1:8000/api/common/state-codes/S03
+Content-Type: application/json
+
+###
+POST http://127.0.0.1:8000/api/common/state-codes
+Content-Type: application/json
+
+{
+  "code": "S00X",
+  "description": "Boondocks"
+}
+
+###

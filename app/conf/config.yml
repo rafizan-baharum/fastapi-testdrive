@@ -1,0 +1,2 @@
+db:
+  url: "postgresql://fa_test:fa_test@127.0.0.1/fa_test"

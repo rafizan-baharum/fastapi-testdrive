@@ -1,0 +1,35 @@
+###
+
+POST http://127.0.0.1:8000/api/security/token
+Content-Type: application/x-www-form-urlencoded
+
+username=root&password=abc123&grant_type=password
+
+> {%
+    client.global.set("access_token", response.body.access_token);
+%}
+
+###
+
+GET http://127.0.0.1:8000/api/identity/customers?filter=Ra&page=1
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+###
+GET http://127.0.0.1:8000/api/identity/customers/C02
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+###
+POST http://127.0.0.1:8000/api/identity/customers
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+  "identity_no": "88238asd13",
+  "name": "Rafizan Baharum",
+  "address": "Jalan Jujur 1, Bandar Tun Razak",
+  "actor_type": 2
+}
+
+###

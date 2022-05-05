@@ -1,0 +1,7 @@
+from enum import Enum
+
+
+class CustomerEvents(Enum):
+    CUSTOMER_VIEWED = "CUSTOMER_VIEWED"
+    CUSTOMER_SAVED = "CUSTOMER_SAVED"
+    CUSTOMER_REMOVED = "CUSTOMER_REMOVED"

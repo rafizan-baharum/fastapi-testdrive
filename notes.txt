@@ -1,0 +1,17 @@
+Todo
+https://github.com/mjhea0/awesome-fastapi
+- email service
+- upload file
+= SecurityContextHolder
+https://stackoverflow.com/questions/6988541/is-it-possible-to-make-a-contextually-sensitive-python-context-manager-that-save
+
+- acl - https://morioh.com/p/f1a819bf96e3
+- state machine
+- audit log DONE
+- jwt DONE
+- seed DONE
+- filter & pagination DONE
+- datetime DONE
+- sequence generator - DONE
+- event DONE
+- base meta DONE

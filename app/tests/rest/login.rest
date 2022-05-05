@@ -1,0 +1,25 @@
+###
+
+POST http://127.0.0.1:8000/api/security/token
+Content-Type: application/x-www-form-urlencoded
+
+username=root&password=abc123&grant_type=password
+
+###
+POST http://127.0.0.1:8000/api/security/token
+Content-Type: application/x-www-form-urlencoded
+
+username=root&password=ab123&grant_type=password
+
+###
+
+GET http://127.0.0.1:8000/api/security/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyb290IiwiZXhwIjoxNjUxMzYyODI2fQ.C1NIOcugqjbltfGBz2Hj_lTesKAsiEyJ9uj7p23f61I
+###
+
+GET http://127.0.0.1:8000/api/common/state-codes?page=1&filter=%
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyb290IiwiZXhwIjoxNjUxMzYwMjgyfQ.YiiEte3A2Zg4R4oQoBm_jrxvgVuXTEioVTHjdUC-qKY
+Content-Type: application/json
+
+###
+

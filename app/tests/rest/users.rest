@@ -1,0 +1,20 @@
+GET http://127.0.0.1:8000/api/identity/users
+Content-Type: application/json
+
+###
+GET http://127.0.0.1:8000/api/identity/users/asd
+Content-Type: application/json
+
+###
+POST http://127.0.0.1:8000/api/identity/users
+Content-Type: application/json
+
+{
+  "name": "asd",
+  "realname": "Uda",
+  "password": "%%%",
+  "email": "uda@gmail.com",
+  "principal_type": 1
+}
+
+###
